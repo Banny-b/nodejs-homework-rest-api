@@ -4,7 +4,6 @@ function validContact(schema) {
     if (error) {
       return res.status(404).json({ message: "missing field" });
     }
-
     return next();
   };
 };
@@ -15,7 +14,6 @@ function validUpdateContact(schema) {
     if (error) {
       return res.status(400).json({ message: error.message });
     }
-
     return next();
   };
 };

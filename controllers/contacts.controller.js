@@ -40,7 +40,7 @@ async function removeContact(req, res) {
   if (!remove) {
     return res.status(404).json({ message: "Not found" });
   }
-    return res.status(200).json({ message: "Contact deleted" });
+  return res.status(200).json({ message: "Contact deleted" });
 };
 
 async function updateContact(req, res) {
