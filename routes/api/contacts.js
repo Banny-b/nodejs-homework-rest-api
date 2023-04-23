@@ -20,7 +20,6 @@ const {
 
 const ctrlWrapper = require("../../helpers/ctrlWrapper");
 const { validToken } = require("../../helpers/validToken");
-
 const router = express.Router();
 
 router.get("/", ctrlWrapper(validToken), ctrlWrapper(getAllContacts));

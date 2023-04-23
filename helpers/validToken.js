@@ -20,7 +20,6 @@ async function validToken(req, res, next) {
       throw Unauthorized("Not authorized");
     }
   }
-
   next();
 };
 
