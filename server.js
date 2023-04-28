@@ -19,6 +19,3 @@ const { HOST_URI } = process.env;
     process.exit(1);
   }
 }) ();
-
-// Sergey
-// rrI1WOzvGxFyRQff

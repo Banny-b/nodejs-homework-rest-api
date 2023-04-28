@@ -17,7 +17,6 @@ const {
   validContact,
   validUpdateContact,
 } = require("../../helpers/validContacts");
-
 const ctrlWrapper = require("../../helpers/ctrlWrapper");
 const { validToken } = require("../../helpers/validToken");
 const router = express.Router();

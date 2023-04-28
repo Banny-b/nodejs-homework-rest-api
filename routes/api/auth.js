@@ -8,6 +8,8 @@ const {
   userInfo,
   upSubscription,
   upAvatar,
+  verifyEmail,
+  repeatVerifyEmail,
 } = require("../../controllers/auth.controller");
 const {
   authUser,
@@ -35,6 +37,8 @@ authRouter.post(
   upload.single("avatar"),
   ctrlWrapper(upAvatar)
 );
+authRouter.get("/verify/:verificationToken", ctrlWrapper(verifyEmail));
+authRouter.post("/verify", ctrlWrapper(repeatVerifyEmail));
 
 module.exports = {
   authRouter,
